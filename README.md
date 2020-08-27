@@ -22,9 +22,9 @@ Una vez se hayan superado estas validaciones se deberá invocar un servicio web 
   - Cargo (String)
   - Salario (Double)
   
-## Solución 
-  
+## Solución  
 ### Cliente Soap
--
+- Servicio Soap
+
 ### Rest
--
+- Servicio Rest que consume el servicio soap
