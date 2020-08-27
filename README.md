@@ -23,8 +23,14 @@ Una vez se hayan superado estas validaciones se deberá invocar un servicio web 
   - Salario (Double)
   
 ## Solución  
-### Cliente Soap
+### Cliente Soap (ws-soap-empleado-client)
 - Servicio Soap
 
-### Rest
+### Rest (ws-rest-empleado)
 - Servicio Rest que consume el servicio soap
+
+
+### Ejecución 
+- Paso 1
+
+- Paso 2
