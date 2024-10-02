@@ -7,10 +7,10 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import com.servicio.gs_ws.AddEmpleadoRequest;
-import com.servicio.gs_ws.AddEmpleadoResponse;
-import com.servicio.gs_ws.EmpleadoType;
-import com.servicio.gs_ws.ServiceStatus;
+import com.servicio.ws.AddEmpleadoRequest;
+import com.servicio.ws.AddEmpleadoResponse;
+import com.servicio.ws.EmpleadoType;
+import com.servicio.ws.ServiceStatus;
 import com.servicio.soap.empleado.entity.EmpleadoEntity;
 import com.servicio.soap.empleado.service.EmpleadoService;
 
