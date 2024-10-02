@@ -5,6 +5,6 @@ import com.servicio.empleado.model.Empleado;
 
 public interface EmpleadoService {
 
-	EmpleadoResponse validarEmpleado(Empleado request)throws Exception;
+	EmpleadoResponse saveEmpleado(Empleado request)throws Exception;
 
 }

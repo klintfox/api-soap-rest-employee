@@ -25,7 +25,7 @@ public class EmpleadoController {
 	public EmpleadoResponse validarEmpleado (@RequestBody Empleado request) {
 		EmpleadoResponse response = new EmpleadoResponse();
 		try {
-			response = empleadoService.validarEmpleado(request);
+			response = empleadoService.saveEmpleado(request);
 		} catch (Exception e) {
 			logger.error("Error"+e);
 		}
