@@ -1,7 +1,6 @@
 package com.servicio.empleado.dto;
 
 import java.io.Serializable;
-import java.util.Date;
 
 public class EmpleadoResponse implements Serializable {
 
@@ -15,9 +14,9 @@ public class EmpleadoResponse implements Serializable {
 
 	private String numeroDocumento;
 
-	private Date fechaNacimiento;
+	private String fechaNacimiento;
 
-	private Date fechaVinculacion;
+	private String fechaVinculacion;
 
 	private String cargo;
 
@@ -59,19 +58,19 @@ public class EmpleadoResponse implements Serializable {
 		this.numeroDocumento = numeroDocumento;
 	}
 
-	public Date getFechaNacimiento() {
+	public String getFechaNacimiento() {
 		return fechaNacimiento;
 	}
 
-	public void setFechaNacimiento(Date fechaNacimiento) {
+	public void setFechaNacimiento(String fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
 	}
 
-	public Date getFechaVinculacion() {
+	public String getFechaVinculacion() {
 		return fechaVinculacion;
 	}
 
-	public void setFechaVinculacion(Date fechaVinculacion) {
+	public void setFechaVinculacion(String fechaVinculacion) {
 		this.fechaVinculacion = fechaVinculacion;
 	}
 

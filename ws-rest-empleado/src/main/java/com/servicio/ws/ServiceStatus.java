@@ -1,4 +1,5 @@
-package com.servicio.empleado.ws;
+
+package com.servicio.ws;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
