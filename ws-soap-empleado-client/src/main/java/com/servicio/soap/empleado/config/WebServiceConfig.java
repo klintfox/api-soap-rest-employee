@@ -17,25 +17,25 @@ import org.springframework.xml.xsd.XsdSchema;
 public class WebServiceConfig extends WsConfigurerAdapter {
 
 	@Bean
-	public ServletRegistrationBean messageDispatcherServlet(ApplicationContext applicationContext) {
+	ServletRegistrationBean<MessageDispatcherServlet> messageDispatcherServlet(ApplicationContext applicationContext) {
 		MessageDispatcherServlet servlet = new MessageDispatcherServlet();
 		servlet.setApplicationContext(applicationContext);
 		servlet.setTransformWsdlLocations(true);
-		return new ServletRegistrationBean(servlet, "/ws/*");
+		return new ServletRegistrationBean<>(servlet, "/ws/*");
 	}
 
 	@Bean(name = "empleados")
-	public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema productsSchema) {
+	DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema empleadosSchema) {
 		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
-		wsdl11Definition.setPortTypeName("productPort");
+		wsdl11Definition.setPortTypeName("empleadoPort");
 		wsdl11Definition.setLocationUri("/ws");
 		wsdl11Definition.setTargetNamespace("http://www.servicio.com/empleado-ws");
-		wsdl11Definition.setSchema(productsSchema);
+		wsdl11Definition.setSchema(empleadosSchema);
 		return wsdl11Definition;
 	}
 
 	@Bean
-	public XsdSchema productsSchema() {
+	XsdSchema productsSchema() {
 		return new SimpleXsdSchema(new ClassPathResource("xsd/empleado.xsd"));
 	}
 }
