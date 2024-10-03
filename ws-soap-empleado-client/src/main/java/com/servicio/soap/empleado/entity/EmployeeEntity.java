@@ -1,42 +1,32 @@
 package com.servicio.soap.empleado.entity;
 
-import java.io.Serializable;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.Data;
 
 @Entity
-@Table(name = "empleado")
-public class EmpleadoEntity implements Serializable {
-
-	private static final long serialVersionUID = -3769843071402821266L;
+@Data
+public class EmployeeEntity {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
 	private String nombres;
-
 	private String apellidos;
-
 	private String tipoDocumento;
-
 	private String numeroDocumento;
-
 	private String fechaNacimiento;
-
 	private String fechaVinculacion;
-
 	private String cargo;
-
 	private Double salario;
 
-	public EmpleadoEntity() {
+	public EmployeeEntity() {
 	}
 
-	public EmpleadoEntity(long id, String nombres, String apellidos, String tipoDocumento, String numeroDocumento,
+	public EmployeeEntity(long id, String nombres, String apellidos, String tipoDocumento, String numeroDocumento,
 			String fechaNacimiento, String fechaVinculacion, String cargo, Double salario) {
 		super();
 		this.id = id;

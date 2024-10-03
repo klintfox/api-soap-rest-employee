@@ -1,53 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns:tns="http://www.servicio.com/empleado-ws"
-	targetNamespace="http://www.servicio.com/empleado-ws"
-	elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:tns="http://www.servicio.com/empleado-ws" 
+           targetNamespace="http://www.servicio.com/empleado-ws" 
+           elementFormDefault="qualified">
 
-	<xs:complexType name="serviceStatus">
-		<xs:sequence>
-			<xs:element name="statusCode" type="xs:string" />
-			<xs:element name="message" type="xs:string" />
-		</xs:sequence>
-	</xs:complexType>
+    <xs:complexType name="EmpleadoType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:long"/>
+            <xs:element name="nombres" type="xs:string"/>
+            <xs:element name="apellidos" type="xs:string"/>
+            <xs:element name="tipoDocumento" type="xs:string"/>
+            <xs:element name="numeroDocumento" type="xs:string"/>
+            <xs:element name="fechaNacimiento" type="xs:string"/>
+            <xs:element name="fechaVinculacion" type="xs:string"/>
+            <xs:element name="cargo" type="xs:string"/>
+            <xs:element name="salario" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
 
-	<xs:complexType name="empleadoType">
-		<xs:sequence>
-			<xs:element name="id" type="xs:long" />
-			<xs:element name="nombres" type="xs:string" />
-			<xs:element name="apellidos" type="xs:string" />
-			<xs:element name="tipoDocumento" type="xs:string" />
-			<xs:element name="numeroDocumento" type="xs:string" />
-			<xs:element name="fechaNacimiento" type="xs:string" />
-			<xs:element name="fechaVinculacion" type="xs:string" />
-			<xs:element name="cargo" type="xs:string" />
-			<xs:element name="salario" type="xs:double" />
-		</xs:sequence>
-	</xs:complexType>
+    <xs:element name="addEmpleadoRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="empleado" type="tns:EmpleadoType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 
-	<xs:element name="addEmpleadoRequest">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="id" type="xs:long" />
-				<xs:element name="nombres" type="xs:string" />
-				<xs:element name="apellidos" type="xs:string" />
-				<xs:element name="tipoDocumento" type="xs:string" />
-				<xs:element name="numeroDocumento" type="xs:string" />
-				<xs:element name="fechaNacimiento" type="xs:string" />
-				<xs:element name="fechaVinculacion" type="xs:string" />
-				<xs:element name="cargo" type="xs:string" />
-				<xs:element name="salario" type="xs:double" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+    <xs:element name="addEmpleadoResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="serviceStatus" type="tns:serviceStatus"/>
+                <xs:element name="empleado" type="tns:EmpleadoType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 
-	<xs:element name="addEmpleadoResponse">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="serviceStatus" type="tns:serviceStatus" />
-				<xs:element name="movieType" type="tns:empleadoType" />
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-
+    <xs:complexType name="serviceStatus">
+        <xs:sequence>
+            <xs:element name="statusCode" type="xs:string"/>
+            <xs:element name="message" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>

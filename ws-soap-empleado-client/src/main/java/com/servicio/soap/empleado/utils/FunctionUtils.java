@@ -1,9 +1,7 @@
 package com.servicio.soap.empleado.utils;
 
 import java.util.Date;
-import java.time.LocalDate;
-import java.time.Period;
-import java.time.format.DateTimeFormatter;
+
 import javax.xml.datatype.XMLGregorianCalendar;
 
 public class FunctionUtils {
