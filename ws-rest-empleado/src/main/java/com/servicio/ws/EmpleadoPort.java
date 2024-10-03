@@ -15,12 +15,12 @@ import javax.xml.bind.annotation.XmlSeeAlso;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "productPort", targetNamespace = "http://www.example.com/empleado-ws")
+@WebService(name = "empleadoPort", targetNamespace = "http://www.servicio.com/empleado-ws")
 @SOAPBinding(parameterStyle = SOAPBinding.ParameterStyle.BARE)
 @XmlSeeAlso({
     ObjectFactory.class
 })
-public interface ProductPort {
+public interface EmpleadoPort {
 
 
     /**
@@ -36,4 +36,3 @@ public interface ProductPort {
         AddEmpleadoRequest addEmpleadoRequest);
 
 }
-

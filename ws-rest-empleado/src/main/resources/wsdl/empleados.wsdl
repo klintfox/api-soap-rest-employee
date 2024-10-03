@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://www.servicio.com/empleado-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.example.com/empleado-ws" targetNamespace="http://www.example.com/empleado-ws">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://www.servicio.com/empleado-ws" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.servicio.com/empleado-ws" targetNamespace="http://www.servicio.com/empleado-ws">
   <wsdl:types>
-    <xs:schema xmlns:tns="http://www.servicio.com/empleado-ws" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.servicio.com/empleado-ws">
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.servicio.com/empleado-ws">
 
     <xs:complexType name="EmpleadoType">
         <xs:sequence>
@@ -41,15 +41,15 @@
     </xs:complexType>
 </xs:schema>
   </wsdl:types>
-  <wsdl:message name="addEmpleadoResponse">
-    <wsdl:part element="sch:addEmpleadoResponse" name="addEmpleadoResponse">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:message name="addEmpleadoRequest">
-    <wsdl:part element="sch:addEmpleadoRequest" name="addEmpleadoRequest">
+    <wsdl:part element="tns:addEmpleadoRequest" name="addEmpleadoRequest">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:portType name="productPort">
+  <wsdl:message name="addEmpleadoResponse">
+    <wsdl:part element="tns:addEmpleadoResponse" name="addEmpleadoResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="empleadoPort">
     <wsdl:operation name="addEmpleado">
       <wsdl:input message="tns:addEmpleadoRequest" name="addEmpleadoRequest">
     </wsdl:input>
@@ -57,7 +57,7 @@
     </wsdl:output>
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="productPortSoap11" type="tns:productPort">
+  <wsdl:binding name="empleadoPortSoap11" type="tns:empleadoPort">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
     <wsdl:operation name="addEmpleado">
       <soap:operation soapAction=""/>
@@ -69,8 +69,8 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:service name="productPortService">
-    <wsdl:port binding="tns:productPortSoap11" name="productPortSoap11">
+  <wsdl:service name="empleadoPortService">
+    <wsdl:port binding="tns:empleadoPortSoap11" name="empleadoPortSoap11">
       <soap:address location="http://localhost:8080/ws"/>
     </wsdl:port>
   </wsdl:service>
