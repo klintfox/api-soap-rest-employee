@@ -39,19 +39,27 @@ Una vez se hayan superado estas validaciones se deberá invocar un servicio web 
 	```	
  
 - Paso 2 Ver Readme.md de la carpeta ws-soap-empleado-client para mayor detalle.
+	
+	```sh
+		[Texto del enlace](https://github.com/klintfox/challenge-soap-empleado/tree/master/ws-rest-empleado)
+	```
 
 
 ### 2 Servicio Rest (ws-rest-empleado)
 
 - Paso 1 posicionarse en el proyecto 
 
-- Paso 2 Una vez importado ejecutar el siguiente comando maven para limpiar e instalar las dependencias desde la carpeta "ws-rest-empleado"
+- Paso 2 Una vez importado ejecutar el siguiente comando maven para limpiar e instalar las dependencias desde la carpeta "ws-rest-empleado" 
 	
 	```sh
 		mvn clean install
 	```	
  
 - Paso 2 Ver Readme.md de la carpeta ws-soap-empleado-client para mayor detalle.
+	```sh
+		[Texto del enlace](https://github.com/klintfox/challenge-soap-empleado/tree/master/ws-rest-empleado)
+
+	```
 
 ### 3 Version Java
 
