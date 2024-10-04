@@ -22,15 +22,38 @@ Una vez se hayan superado estas validaciones se deberá invocar un servicio web 
   - Cargo (String)
   - Salario (Double)
   
-## Solución  
-### Cliente Soap (ws-soap-empleado-client)
-- Servicio Soap
+## Solución
 
-### Rest (ws-rest-empleado)
-- Servicio Rest que consume el servicio soap
+- Clonar proyecto 
+
+	```sh
+	git clone https://github.com/klintfox/challenge-soap-empleado.git
+	```
+
+### 1 Servicio Soap (ws-soap-empleado-client)
+
+- Paso 1 Una vez importado ejecutar el siguiente comando maven para limpiar e instalar las dependencias desde la carpeta "ws-soap-empleado-client"
+	
+	```sh
+		mvn clean install
+	```	
+ 
+- Paso 2 Ver Readme.md de la carpeta ws-soap-empleado-client para mayor detalle.
 
 
-### Ejecución 
-- Paso 1
+### 2 Servicio Rest (ws-rest-empleado)
 
-- Paso 2
+- Paso 1 posicionarse en el proyecto 
+
+- Paso 2 Una vez importado ejecutar el siguiente comando maven para limpiar e instalar las dependencias desde la carpeta "ws-rest-empleado"
+	
+	```sh
+		mvn clean install
+	```	
+ 
+- Paso 2 Ver Readme.md de la carpeta ws-soap-empleado-client para mayor detalle.
+
+### 3 Version Java
+
+- La versión para ambos servicios fue Java17 
+
