@@ -40,7 +40,7 @@ Una vez se hayan superado estas validaciones se deberá invocar un servicio web 
  
 - Paso 2 Ver Readme.md de la carpeta ws-soap-empleado-client para mayor detalle.
 
-	[Texto del enlace](https://github.com/klintfox/challenge-soap-empleado/tree/master/ws-rest-empleado)
+	[Servicio Rest](https://github.com/klintfox/challenge-soap-empleado/tree/master/ws-rest-empleado)
 
 
 ### 2 Servicio Rest (ws-rest-empleado)
@@ -55,7 +55,7 @@ Una vez se hayan superado estas validaciones se deberá invocar un servicio web 
  
 - Paso 2 Ver Readme.md de la carpeta ws-soap-empleado-client para mayor detalle.
 
-		[Texto del enlace](https://github.com/klintfox/challenge-soap-empleado/tree/master/ws-rest-empleado)
+	[Servicio Soap](https://github.com/klintfox/challenge-soap-empleado/tree/master/ws-rest-empleado)
 
 
 ### 3 Version Java
