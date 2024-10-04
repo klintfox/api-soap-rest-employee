@@ -62,7 +62,7 @@ public class EmpleadoEndpoint {
 		}
 
 		EmpleadoType newEmpleadoTypeResp = new EmpleadoType();
-		// newEmpleadoTypeResp.setId(newEmpleadoEntity.getId());
+		//newEmpleadoTypeResp.setId(newEmpleadoEntity.getId());
 		newEmpleadoTypeResp.setNombres(newEmpleadoEntity.getNombres());
 		newEmpleadoTypeResp.setApellidos(newEmpleadoEntity.getApellidos());
 		newEmpleadoTypeResp.setTipoDocumento(newEmpleadoEntity.getTipoDocumento());
