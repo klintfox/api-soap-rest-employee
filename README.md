@@ -38,9 +38,7 @@ Una vez se hayan superado estas validaciones se deberá invocar un servicio web 
 		mvn clean install
 	```	
  
-- Paso 2 Ver Readme.md de la carpeta ws-soap-empleado-client para mayor detalle.
-
-	[Servicio Rest](https://github.com/klintfox/challenge-soap-empleado/tree/master/ws-rest-empleado)
+- Paso 2 Ver Readme.md de la carpeta ws-soap-empleado-client para mayor detalle. [Ver Servicio Rest](https://github.com/klintfox/challenge-soap-empleado/tree/master/ws-rest-empleado)
 
 
 ### 2 Servicio Rest (ws-rest-empleado)
@@ -53,9 +51,7 @@ Una vez se hayan superado estas validaciones se deberá invocar un servicio web 
 		mvn clean install
 	```	
  
-- Paso 2 Ver Readme.md de la carpeta ws-soap-empleado-client para mayor detalle.
-
-	[Servicio Soap](https://github.com/klintfox/challenge-soap-empleado/tree/master/ws-rest-empleado)
+- Paso 2 Ver Readme.md de la carpeta ws-soap-empleado-client para mayor detalle. [Ver Servicio Soap](https://github.com/klintfox/challenge-soap-empleado/tree/master/ws-rest-empleado)
 
 
 ### 3 Version Java
