@@ -25,10 +25,10 @@ Una vez se hayan superado estas validaciones se deberá invocar un servicio web 
 ## Solución
 
 - Clonar proyecto 
-
+	
 	```sh
 	git clone https://github.com/klintfox/challenge-soap-empleado.git
-	```
+	``` 
 
 ### 1 Servicio Soap (ws-soap-empleado-client)
 

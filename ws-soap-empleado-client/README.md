@@ -15,7 +15,7 @@ Servicio Soap para registrar un empleado en una base de datos H2
 	```	
  
 - Paso 3 Estructura del proyecto
-
+	
 	```sh
 		ws-soap-empleado-client
 		├───main
@@ -51,8 +51,8 @@ Servicio Soap para registrar un empleado en una base de datos H2
 		│               empleado.xsd
 		│
 		└-pom.xml		
-	```
-	
+	``` 
+
 - Paso 4 En está sección del archivo pom.xml se indica la configuración para generar las clases a utilizarse en el proyecto
 	
 	```sh
@@ -92,17 +92,17 @@ Servicio Soap para registrar un empleado en una base de datos H2
 				</dependency>
 			</dependencies>
 		</plugin>
-	```
+	``` 
 
 ### Ejecución Servicio Soap 
 
 - Paso 1 Utilizando comandos maven 
 
 -- Abrimos una consola nos posicionamos a la raiz del servicio soap y ejecutamos el siguiente comando maven
-
+	
 	```sh
 		mvn spring-boot:run
-	```
+	``` 
 
 -- Utilizando Spring STS
 	Realizamos click derecho en el proyecto y en la opción "Run As" elegimos la opción "Sprin Bboot App"
@@ -113,10 +113,10 @@ Servicio Soap para registrar un empleado en una base de datos H2
 	
 	```sh
 		http://localhost:8080/ws/empleados.wsdl
-	```
-	
+	``` 
+
 	- Guardamos el archivo con la extensión wsdl y lo importamos desde SOAPUI (en el proyecto en "resources/otherTests" hay capturas de H2 y SoapUI
-	
+
 
 ### Java version y dependencias 
 	
@@ -169,8 +169,7 @@ Servicio Soap para registrar un empleado en una base de datos H2
 				<artifactId>wsdl4j</artifactId>
 			</dependency>
 		</dependencies>
-	```
-
+	``` 
 
 ### Por Implementar
 - Swagger

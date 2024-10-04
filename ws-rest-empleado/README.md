@@ -13,9 +13,9 @@ Servicio Rest consumir el servicio Soap mediante los artefactores generados desd
 	```sh
 		mvn clean install
 	```	
- 
-- Paso 3 Estructura del proyecto
 
+- Paso 3 Estructura del proyecto
+	
 	```sh
 		ws-rest-empleado
 		├───main
@@ -74,9 +74,7 @@ Servicio Rest consumir el servicio Soap mediante los artefactores generados desd
 			│       └───servicio
 			│           └───empleado
 			│                   ServicioEmpleadoApplicationTests.java
-	```
-
-	
+	``` 
 
 
 - Generación clases a partir del wsld
