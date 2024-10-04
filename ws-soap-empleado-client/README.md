@@ -98,7 +98,7 @@ Servicio Soap para registrar un empleado en una base de datos H2
 
 - Paso 1 Utilizando comandos maven 
 
--- Abrimos una consola nos posicionamos a la raiz del servicio soap y ejecutamos el siguiente comando maven
+-- Abrimos una consola nos posicionamos a la raiz del servicio soap y ejecutamos el siguiente comando maven.
 	
 	```sh
 		mvn spring-boot:run
@@ -121,6 +121,7 @@ Servicio Soap para registrar un empleado en una base de datos H2
 ### Java version y dependencias 
 	
 	```sh
+	
 		<properties>
 			<java.version>17</java.version>
 		</properties>
@@ -169,6 +170,7 @@ Servicio Soap para registrar un empleado en una base de datos H2
 				<artifactId>wsdl4j</artifactId>
 			</dependency>
 		</dependencies>
+		
 	``` 
 
 ### Por Implementar
