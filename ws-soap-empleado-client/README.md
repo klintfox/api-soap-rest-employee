@@ -4,9 +4,6 @@ Servicio Soap para registrar un empleado en una base de datos H2
 
 ## Solución
 
-### 1 Servicio Soap (ws-soap-empleado-client)
-
-
 ### Ejecución Servicio Soap
 
 - Paso 1 Posicionarse en el proyecto "ws-soap-empleado-client" ya sea por consola o importandolo desde STS
